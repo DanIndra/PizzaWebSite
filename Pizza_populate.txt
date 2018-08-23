@@ -1,0 +1,60 @@
+
+SET IDENTITY_INSERT MenuItem ON;
+INSERT INTO MenuItem(MenuItemID, MenuItemType, ItemName, PizzaTopping, GraphicFile)
+VALUES( 1, 'Pizza',  'BBQ Meat Feast','BBQ Sauce, Spicy Pork, Ham, Pepperoni, Seasoned Minced Beef ', 'bbq-meatfeast.jpg'),
+( 2, 'Pizza', 'Hawaiian',  'Slow cooked, melt in the mouth, pulled ham hock and juicy chunks of fresh pineapple on a bed of melting mozzarella, makes this pizza the ultimate expression of Papa John’s passion for quality. ', 'hawaiian.jpg'),
+( 3, 'Pizza', 'Margherita','The perfect blend of melting cheese and our very own tomato sauce.', 'margherita.jpg'),
+( 4, 'Pizza', 'Pepperoni Feast','If you like pepperoni, you’ll love this upgrade of a classic pizza, Not only does the Papa’s Double Pepperoni boast a generous double helping of smoky pepperoni cooked to perfection ', 'pepperoni-feast.jpg'),
+( 5, 'Pizza', 'Texan BBQ','All the BBQ taste, without the BBQ hassle. Succulent chunks of tasty chargrilled chicken, crispy bacon, slices of sweet onions are lovingly drizzled with The our own smoky BBQ ', 'texan-bbq.jpg'),
+( 6, 'Pizza', 'Veg Sizzler', 'Freshly sliced red onions, sit alongside crisp green peppers, complemented by cherry tomatoes, juicy sweetcorn and baby portobello mushrooms ', 'veg-sizzler.jpg');
+SET IDENTITY_INSERT MenuItem OFF;
+
+INSERT INTO SizeAndPrice(fkMenuItemID, ItemSize , ItemPrice) VALUES 
+( 1, 'Small', 4.99),
+( 1, 'Medium', 7.99),
+( 1, 'Larger', 11.99),
+( 1, 'X-Large', 13.99);
+
+INSERT INTO SizeAndPrice(fkMenuItemID, ItemSize , ItemPrice) VALUES 
+( 2, 'Small', 4.99),
+( 2, 'Medium', 7.99),
+( 2, 'Larger', 11.99),
+( 2, 'X-Large', 13.99);
+
+INSERT INTO SizeAndPrice(fkMenuItemID, ItemSize , ItemPrice) VALUES 
+( 3, 'Small', 4.99),
+( 3, 'Medium', 7.99),
+( 3, 'Larger', 11.99),
+( 3, 'X-Large', 13.99);
+
+INSERT INTO SizeAndPrice(fkMenuItemID, ItemSize , ItemPrice) VALUES 
+( 4, 'Small', 4.99),
+( 4, 'Medium', 7.99),
+( 4, 'Larger', 11.99),
+( 4, 'X-Large', 13.99);
+
+INSERT INTO SizeAndPrice(fkMenuItemID, ItemSize , ItemPrice) VALUES 
+( 5, 'Small', 4.99),
+( 5, 'Medium', 7.99),
+( 5, 'Larger', 11.99),
+( 5, 'X-Large', 13.99);
+
+INSERT INTO SizeAndPrice(fkMenuItemID, ItemSize , ItemPrice) VALUES 
+( 6, 'Small', 4.99),
+( 6, 'Medium', 7.99),
+( 6, 'Larger', 11.99),
+( 6, 'X-Large', 13.99);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

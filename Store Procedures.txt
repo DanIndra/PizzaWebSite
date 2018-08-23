@@ -1,0 +1,30 @@
+CREATE PROCEDURE [dbo].[spInsertOrders]
+	@OrderDate datetime,
+	@CustName varchar(50),
+	@Address varchar(100),
+	@PostCode varchar(50),
+	@DeliveryCharge money,
+	@TotalValue money,
+	@OrderID int OUTPUT
+
+AS
+
+INSERT INTO Orders VALUES
+(@OrderDate, @CustName, @Address, @PostCode, @DeliveryCharge, @TotalValue)
+SELECT @OrderID = SCOPE_IDENTITY()
+
+
+
+
+CREATE PROCEDURE [dbo].[spInsertOrderItems]
+	@fkOrderID int,
+	@fkMenuItemID int,
+	@ItemSize varchar(10),
+	@ItemName varchar(50),
+	@Quantity int,
+	@SubTotal  money,
+
+AS
+
+INSERT INTO OrderItems VALUES
+(@fkOrderID, @fkMenuItmeID, @ItemSize, @ItemName, @Quantity, @SubTotal)
